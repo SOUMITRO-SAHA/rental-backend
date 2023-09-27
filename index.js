@@ -8,6 +8,8 @@ const cookieParser = require("cookie-parser");
 const { config } = require("./config");
 const propertyRoutes = require("./routes/properties.routes");
 const userRoutes = require("./routes/user.routes");
+const amenityRoutes = require("./routes/amenity.routes");
+const appointmentRoutes = require("./routes/appointment.routes");
 const ticketRoutes = require("./routes/ticket.routes");
 
 // view engine setup
@@ -41,6 +43,8 @@ app.get("/", (req, res) => {
 });
 app.use("/properties", propertyRoutes);
 app.use(userRoutes);
+app.use("/amenity", amenityRoutes);
+app.use("/appointment", appointmentRoutes);
 app.use("/ticket", ticketRoutes);
 
 app.on("error", (err) => {

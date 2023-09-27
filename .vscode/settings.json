@@ -1,3 +1,8 @@
 {
+<<<<<<< HEAD
   "editor.acceptSuggestionOnEnter": "on"
 }
+=======
+	"editor.acceptSuggestionOnEnter": "on"
+}
+>>>>>>> c05b4feb230d514d2295b72ce08eebb9dbc80598
